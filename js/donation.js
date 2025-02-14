@@ -3,7 +3,7 @@ document.addEventListener("scroll", function () {
   const header = document.getElementById("header");
   const navBar = document.getElementById("nav-Bar");
 
-  if (window.scrollY > 50) {
+  if (window.scrollY) {
     header.classList.add("scrolling", "bg-transparent", "backdrop-blur-xl");
     navBar.classList.add("scrolling", "bg-transparent", "backdrop-blur-xl");
   } else {

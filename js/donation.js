@@ -4,11 +4,11 @@ document.addEventListener("scroll", function () {
   const navBar = document.getElementById("nav-Bar");
 
   if (window.scrollY > 50) {
-    header.classList.add("scrolling", "bg-transparent", "backdrop-blur-md");
-    navBar.classList.add("scrolling", "bg-transparent", "backdrop-blur-md");
+    header.classList.add("scrolling", "bg-transparent", "backdrop-blur-xl");
+    navBar.classList.add("scrolling", "bg-transparent", "backdrop-blur-xl");
   } else {
-    header.classList.remove("scrolling", "bg-transparent", "backdrop-blur-md");
-    navBar.classList.remove("scrolling", "bg-transparent", "backdrop-blur-md");
+    header.classList.remove("scrolling", "bg-transparent", "backdrop-blur-xl");
+    navBar.classList.remove("scrolling", "bg-transparent", "backdrop-blur-xl");
   }
 });
 
@@ -33,14 +33,16 @@ historyBtn.addEventListener("click", function () {
     "text-[#111111B3]",
     "border",
     "border-[#1111114D]",
-    "bg-transparent"
+    "bg-transparent",
+    "hover:bg-gray-300"
   );
 
   historyBtn.classList.remove(
     "text-[#111111B3]",
     "border",
     "border-[#1111114D]",
-    "bg-transparent"
+    "bg-transparent",
+    "hover:bg-gray-300"
   );
   historyBtn.classList.add("bg-[#B4F461]", "text-[#111]", "border-none");
 
@@ -55,14 +57,16 @@ donationBtn.addEventListener("click", function () {
     "text-[#111111B3]",
     "border",
     "border-[#1111114D]",
-    "bg-transparent"
+    "bg-transparent",
+    "hover:bg-gray-300"
   );
 
   donationBtn.classList.remove(
     "text-[#111111B3]",
     "border",
     "border-[#1111114D]",
-    "bg-transparent"
+    "bg-transparent",
+    "hover:bg-gray-300"
   );
   donationBtn.classList.add("bg-[#B4F461]", "text-[#111]", "border-none");
 

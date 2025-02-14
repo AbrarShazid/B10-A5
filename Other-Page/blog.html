@@ -39,83 +39,121 @@
       }
     </style>
 
-    <title>Donate Bangladesh</title>
+    <title>Blog Page</title>
   </head>
-  <body class="font-Lexend">
-
-    <header>
-      <nav class="flex items-center justify-around pt-2 pb-4 bg-[#F9F7F3]">
-        <button id="home-button" class="bg-[#B4F461] rounded-lg px-6 py-2 font-semibold text-xl">Home</button>
+  <body class="font-Lexend min-h-screen flex flex-col">
+    <header id="header" class="sticky top-0 z-5">
+      <nav
+        id="nav-Bar"
+        class="flex items-center justify-around pt-2 pb-4 bg-[#F9F7F3]"
+      >
+        <button
+          id="home-button"
+          class="bg-[#B4F461] rounded-lg px-6 py-2 font-semibold text-xl"
+        >
+          Home
+        </button>
 
         <div class="flex items-center gap-4">
-          <img src="../assets/logo.png" alt="">
-          <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+          <img src="../assets/logo.png" alt="" />
+          <h1 class="text-xl font-semibold hidden md:block">
+            Donate Bangladesh
+          </h1>
         </div>
 
         <!-- available balance  -->
-        <div class="flex items-center gap-3">
-          <img src="../assets/coin.png" alt="">
-          <h2 class="text-[#111111B3] text-xl font-medium"><span id="balance">10000</span> BDT</h2>
+        <div class="flex items-center gap-1 md:gap-3">
+          <img src="../assets/coin.png" alt="" />
+          <h2 class="text-[#111111B3] text-xl font-medium">
+            <span id="balance">10000</span> BDT
+          </h2>
         </div>
-
       </nav>
     </header>
 
-
-
-
-
-
-
-    <main class="mt-4   md:mt-8 px-[5%]">
-
-      <h1 class= "text-2xl md:text-4xl  font-semibold mb-4 md:mb-8">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
-      <div class="collapse collapse-arrow bg-base-200 border border-[#1111114D]">
+    <main class="mt-4 mb-[3%] md:mt-8 px-[5%]">
+      <h1 class="text-2xl md:text-4xl font-semibold mb-4 md:mb-8">
+        Important FAQ <i class="fa-regular fa-circle-question"></i>
+      </h1>
+      <div
+        class="collapse collapse-arrow bg-base-200 border border-[#1111114D]"
+      >
         <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
         <div class="collapse-content">
-          <p class="text-[#000000AA]">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, where each object corresponds to a part of the document (like elements, attributes, and text). The DOM allows developers to interact with the content and structure of web pages, enabling dynamic changes in response to user actions, time, or other events.</p>
+          <p class="text-[#000000AA]">
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a web page as a tree of
+            objects, where each object corresponds to a part of the document
+            (like elements, attributes, and text). The DOM allows developers to
+            interact with the content and structure of web pages, enabling
+            dynamic changes in response to user actions, time, or other events.
+          </p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200 border border-[#1111114D]">
+      <div
+        class="collapse collapse-arrow bg-base-200 border border-[#1111114D]"
+      >
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from DOM?
+        </div>
         <div class="collapse-content">
-          <p class="text-[#000000AA]">getElementById(): Select by id. <br>
-            getElementsByClassName(): Select by class. <br>
-            getElementsByTagName(): Select by tag name. <br>
-            querySelector(): Select the first matching element (CSS selector). <br>
-            querySelectorAll(): Select all matching elements (CSS selector). <br>
-            parentNode, children: Navigate parent or child elements. <br></p>
+          <p class="text-[#000000AA]">
+            getElementById(): Select by id. <br />
+            getElementsByClassName(): Select by class. <br />
+            getElementsByTagName(): Select by tag name. <br />
+            querySelector(): Select the first matching element (CSS selector).
+            <br />
+            querySelectorAll(): Select all matching elements (CSS selector).
+            <br />
+            parentNode, children: Navigate parent or child elements. <br />
+          </p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200 border border-[#1111114D]">
+      <div
+        class="collapse collapse-arrow bg-base-200 border border-[#1111114D]"
+      >
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
           How do you manipulate an element's attribute and styles using the DOM?
         </div>
         <div class="collapse-content">
-          <p class="text-[#000000AA]">Attributes: Use setAttribute(attribute, value), getAttribute(attribute), and removeAttribute(attribute) to modify, retrieve, or remove attributes. <br>
-            Styles: Use the style property to modify inline styles directly (e.g., element.style.color = 'red') or use classList to add/remove CSS classes (e.g., element.classList.add('active')).</p>
+          <p class="text-[#000000AA]">
+            Attributes: Use setAttribute(attribute, value),
+            getAttribute(attribute), and removeAttribute(attribute) to modify,
+            retrieve, or remove attributes. <br />
+            Styles: Use the style property to modify inline styles directly
+            (e.g., element.style.color = 'red') or use classList to add/remove
+            CSS classes (e.g., element.classList.add('active')).
+          </p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200 border border-[#1111114D]">
+      <div
+        class="collapse collapse-arrow bg-base-200 border border-[#1111114D]"
+      >
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?
+        <div class="collapse-title text-xl font-medium">
+          What is event delegation in the context of the DOM, and why is it
+          useful?
         </div>
         <div class="collapse-content">
-          <p class="text-[#000000AA]">Event delegation is a technique in JavaScript where instead of attaching an event listener to each individual element, you attach a single event listener to a parent element that listens for events on its child elements. When an event occurs on one of the child elements, the event is "bubbled" up to the parent element, where it can be handled.</p>
+          <p class="text-[#000000AA]">
+            Event delegation is a technique in JavaScript where instead of
+            attaching an event listener to each individual element, you attach a
+            single event listener to a parent element that listens for events on
+            its child elements. When an event occurs on one of the child
+            elements, the event is "bubbled" up to the parent element, where it
+            can be handled.
+          </p>
         </div>
       </div>
-
-
     </main>
 
-
-
-
+    <footer class="bg-[#F9F7F3] md:h-20 mt-auto"></footer>
   </body>
   <script src="../js/blog.js"></script>
   <script src="../js/transaction_shared.js"></script>
-
 </html>

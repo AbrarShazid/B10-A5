@@ -51,6 +51,10 @@ donateNoakhali.addEventListener("click", function () {
 
     // Append to history section
     historySec.appendChild(historyDiv);
+
+    // modal part
+
+    document.getElementById("my_modal_5").showModal();
   } else {
     document.getElementById("noakhaliAmnt").value = "";
     alert("Enter a valid amount");
@@ -59,8 +63,8 @@ donateNoakhali.addEventListener("click", function () {
 
 // feni balance
 
-const donateFeni=document.getElementById("donateFeni");
-let feniTotal=parseFloat(document.getElementById("feniTotal").innerText);
+const donateFeni = document.getElementById("donateFeni");
+let feniTotal = parseFloat(document.getElementById("feniTotal").innerText);
 
 donateFeni.addEventListener("click", function () {
   let feniAmnt = document.getElementById("feniAmnt").value;
@@ -90,19 +94,20 @@ donateFeni.addEventListener("click", function () {
 
     // Append to history section
     historySec.appendChild(historyDiv);
+
+    // modal part
+
+    document.getElementById("my_modal_5").showModal();
   } else {
     document.getElementById("feniAmnt").value = "";
     alert("Enter a valid amount");
   }
 });
 
-
-
 // aid for student
 
-const aidStudent=document.getElementById("aidStudent");
-let aidTotal=parseFloat(document.getElementById("aidTotal").innerText);
-
+const aidStudent = document.getElementById("aidStudent");
+let aidTotal = parseFloat(document.getElementById("aidTotal").innerText);
 
 aidStudent.addEventListener("click", function () {
   let aidAmnt = document.getElementById("aidAmnt").value;
@@ -132,10 +137,11 @@ aidStudent.addEventListener("click", function () {
 
     // Append to history section
     historySec.appendChild(historyDiv);
+    // modal part
+
+    document.getElementById("my_modal_5").showModal();
   } else {
     document.getElementById("aidAmnt").value = "";
     alert("Enter a valid amount");
   }
 });
-
-
